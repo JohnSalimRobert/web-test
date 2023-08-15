@@ -13,6 +13,10 @@ module.exports = {
     backgroundImage: {
       'my': "url('../src/images/logo.png')",
     },
+    rotate: {
+      '120': '120deg',
+    }
+
   },
   plugins: [],
 }
