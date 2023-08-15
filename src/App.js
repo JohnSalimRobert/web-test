@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import './index.css'
+import Navbar from './components/Navbar';
+import Main from './components/Main';
+import Footer from './components/Footer';
+const links = [
+  {url: '#', text: 'Home'},
+  {url: '#', text: 'About us'},
+  {url: '#', text: 'Services'},
+  {url: '#', text: 'Blogs'},
+  {url: '#', text: 'Careers'},
+  {url: '#', text: 'Contact us'},
+]
+
+
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar links={links}/>
+      <Main />
+      <Footer />
     </div>
   );
 }
